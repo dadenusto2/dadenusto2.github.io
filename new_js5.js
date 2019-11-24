@@ -169,3 +169,5 @@ Sim.initialize = function(that) {
 		}
 	}
 };
+
+new Sim();
