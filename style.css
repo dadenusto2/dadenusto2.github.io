@@ -468,6 +468,10 @@ div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
     bottom:50px;
 }
 
+div.sim-slider-dots4, span.sim-dot4, div.sim-slider-dots4{
+    visibility: hidden;
+    display: none;
+}
 span.sim-dot, span.sim-dot2, span.sim-dot3{
     width: 10px;
     height: 10px;
