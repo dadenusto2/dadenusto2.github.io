@@ -1,19 +1,745 @@
-.prev, .next {
-  position: absolute;
-  top: 30%;
-  font-size: 30px;
-  z-index: 1;
-  cursor: pointer;
+body{
+    outline: none;
+    font-family: 'Uni Sans Semibold' ;
+    margin: auto auto;
+}
+a{
+    font-family: 'Uni Sans Semibold' ;  
+}
+.navbar{
+    padding:8
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(2, 2, 2, 0.5) !important;
+    border-color: rgba(255,255,255,.1) !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.next {
-  right: 0;
+.dropdown-toggle::after {
+    margin-left: 0;
+}
+.dropdown-menu{
+    padding: 0px !important;
+    width: 150px;
+    border: 0px solid rgba(0,0,0,.15)!important ;
+}
+.dropdown-menu a{
+    color: black
+}
+.dropdown-menu ul{
+    padding: 0px 0px 0px 7px;
+}
+a.nan-link{
+    color:black;
+
+}
+.dropdown-menu li.nav-item, .dropdown-menu li a.nav-link{
+    padding: 0px !important;
+}
+.nav-link.dropdown-toggle{
+    padding: 0px !important;
+}
+li.nav-item.nodrop a{
+    color:black;
+}
+li.nav-item.nodrop a.nav-link{
+    padding: 0px;
+    color: black;
+}
+li.nav-item.nodrop ul{
+    padding:0px 0px 0px 10px;
+}
+@font-face{
+    font-family: 'Uni Sans Semibold';
+    src: url('UniSansSemiBold.eot');
+    src: url('UniSansSemiBold.eot?#iefix') format('embedded-opentype'),
+    url('UniSansSemiBold.woff') format('woff'),
+    url('UniSansSemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#Affordable_TVs {
+    background: url(./img/index.jpg) no-repeat;
+    background-size: 900pt, auto;
+    background-position: center;
+    font-weight: 600;
+}
+#Affordable_TVs  .text-info{
+    font-size: 21px;
+    margin:0px 20px 0px;
 }
 
+#Affordable_TVs  h2, h5{
+    margin: 0 20px;
+    line-height: 1;
+    font-weight: 900;
+}
+#Affordable_TVs  img{
+    border-radius: 7px;
+}
+#Affordable_TVs  table{
+    margin: 40px 20px;
+    border-spacing: 100px, 100px;
+}
+#Affordable_TVs  table a{
+    text-decoration: none;
+}
+#Affordable_TVs  table td{
+    margin: 0 0 0 0;
+    padding: 10px 6px;
+    line-height: 1;
+    text-align: left;
+}
+#Affordable_TVs  table td{
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+}
+#Affordable_TVs  table .text-info{
+    font-weight: 900;
+    font-size: 25px;
+    margin: 0;
+}
+#bathroom h2{
+    margin: 0 20px;
+    line-height: 1;
+}
+#bath_gallery, #kitc_gallery, #mir_gallery, #cer_galler{
+    background: linear-gradient(to top, rgb(192, 191, 191) 0%, white 50%, rgb(192, 191, 191) 100%);
+}
 
-@media (max-device-width: 480px){
-  img{
-    height:120px;
-    width: 120px;
+li.nav-item table td a{
+    color: black;
+}
+.col-6.col-md-1.text-center{
+    padding: 5px 0px;
+}
+.row .where{
+    text-align: center;
+    font-size: large;
+    margin: 0 20px;
+    line-height: 1;
+}
+.row .what{
+    font-size: xx-large;
+    margin: 0 20px;
+    line-height: 1;
+}
+.row .with_what{
+    font-size: small;
+    margin: 0 20px;
+    line-height: 1;
+}
+.row{
+    font-size: xx-small;
+    text-align: center;
+}
+.row img{
+    align-content: top;
+}
+.row a img:hover, active{
+    filter: grayscale();
+}
+#id a:not([onclick]){
+    z-index:500;
+    text-align: center;
+    font-size: 30px;
+    background: rgb(228, 223, 223);
+    border-radius: 15px;
+    animation-duration: 3s;
+    animation-name: slideDown;
+    font-size: 15px;
+}
+.center a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600px;
+    color: white;
+}
+.center{
+    background-color: red; 
+    text-align: top;
+    border-radius: 35px;
+    height: 40px;
+    width: 700px;
+}
+#bathroom td, tr{
+    vertical-align: center;
+}
+.center, .center-align {
+    text-align: center;
+}
+
+.text-center{
+    vertical-align: top;
+    font-size: 7px;
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+}
+#map_content2{
+    background-color: black;
+    position: absolute;
+    text-align: left;
+    height: 400px;
+    width: 300px;
+    z-index: 500;
+    top:1740px;
+    opacity: 0.7;
+    color: white;
+    border-radius: 7px;
+}
+#map_content{
+    position	: relative; /* for IE 6 */
+    width:100%;
+    margin:10px 0;
+}
+
+iframe:not([id]){
+    position	: absolute;
+    width		: 300%; /* for IE 6*/
+    left:-100%;
+
+}
+.map_text{
+    position	: absolute;
+	top		: 100px;
+	left		: 0;
+    color			: white;
+    background		: black;
+    opacity: 0.8;
+    font-size: 16px;
+    text-align: left;
+    padding: 25px 0;
+    height: 400px;
+    width: 300px;
+    font-weight: 200;
+    border-radius: 10px;
+}
+.image {
+	position	: relative;
+	width		: 100%; /* for IE 6 */
+}
+.image p{
+    position	: absolute;
+	top		: 0px;
+	left		: 0px;
+    width		: 100%;
+    color			: white;
+    background		: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 10px;
+    height: 170px;
+    width: 170px;
+    font-weight: 200;
+}
+
+form textarea{
+    border-radius: 15px;
+    width: 270px;
+}
+form input{
+    width: 270px;
+    border-radius: 15px;
+}
+form input:not([placeholder]){
+    background-color: red;
+    color:white;
+    border-color: red;
+}
+footer .text-center{
+    color: white;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }           
+    100% {
+        transform: translateY(0%);
+    }       
+}
+ 
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    50%{
+        -webkit-transform: translateY(8%);
+    }
+    65%{
+        -webkit-transform: translateY(-4%);
+    }
+    80%{
+        -webkit-transform: translateY(4%);
+    }
+    95%{
+        -webkit-transform: translateY(-2%);
+    }           
+    100% {
+        -webkit-transform: translateY(0%);
+    }   
+}
+#become-reseller a{
+    font-size: xx-large;
+    background-color: white;
+    text-decoration: underline;
+}
+#become-reseller a:hover{
+    color:blue;
+}
+footer img:not([alt]){
+    background-color: white;
+    border-radius: 10px;
+    margin-top:10px;
+}
+footer{
+    position: relative;
+    margin:30px 0;
+    top:600px;
+    width: 100%;
+    margin: 0%;
+    background-color:rgb(83, 83, 83);
+    color:white;
+    font-size: 18px;
+    margin:0 auto;
+}
+footer table td{
+    text-align: left;
+    font-size: 8px;
+    vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+
+}
+footer .row .col-5, .col-1, .col-2, .col-12.col-md-5{
+    margin:20px 0px 0px;
+}
+footer table{
+    border-collapse: separate;
+    table-layout: auto;
+    width:100%;
+    margin:13px 0px 13px;
+}
+footer table img{
+    margin:5px 0px 0px;
+}
+footer p{
+    margin:10PX;
+}
+footer a, footer a:hover, footer a:hover:not([target]){
+    color:white;
+    text-decoration: none;
+}
+footer a:not([target]){
+    text-decoration: underline;
+}
+footer a img:hover, active {
+    filter: none;
+}
+.sim-slider, .sim-slider2, .sim-slider3, .sim-slider4 {
+    max-width: 1000px;
+    min-width: 320px;
+    height: auto;
+    margin: 20px auto;
+    padding: 0px 0px 0px 150px;
+    background-color: rgba(0, 120, 201, 0);
+}
+  .slider-title {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #888770;
+}
+.slider-title2 {
+    display: inline-block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: black;
+}
+    .slider-title2 .large {
+    font-size: 36px;
+    font-weight: 700;
+}
+.slider-title .large {
+    font-size: 26px;
+}
+  /* General styles */
+.sim-slider, .sim-slider2, .sim-slider3, .sim-slider4{
+    position: relative;
+}
+
+.sim-slider-list, .sim-slider-list2, .sim-slider-list3, .sim-slider-list4{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    height: 450px;
+    width: 720px;
+    background-color: rgba(0, 120, 201, 0);   
+}
+.sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img{
+    height: 400px;
+    width: 700px;
+}
+.sim-slider-list4 img {
+    height: 355px;
+    width: 255px;
+}
+.sim-slider-element, .sim-slider-element2, .sim-slider-element3, .sim-slider-element4{
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    align-content: center;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.sim-slider-element4{
+    left: 250px;    
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left, div.sim-slider-arrow-right,
+div.sim-slider-arrow-left2, div.sim-slider-arrow-right2,
+div.sim-slider-arrow-left3, div.sim-slider-arrow-right3,
+div.sim-slider-arrow-left4, div.sim-slider-arrow-right4 {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+}
+
+div.sim-slider-arrow-left, div.sim-slider-arrow-left2, div.sim-slider-arrow-left3, div.sim-slider-arrow-left4{
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+}
+
+div.sim-slider-arrow-right, div.sim-slider-arrow-right2, div.sim-slider-arrow-right3, div.sim-slider-arrow-right4{
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+}
+
+div.sim-slider-arrow-left:hover, div.sim-slider-arrow-left2:hover, div.sim-slider-arrow-left3:hover, div.sim-slider-arrow-left4:hover{
+    opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover, div.sim-slider-arrow-right2:hover, div.sim-slider-arrow-right3:hover, div.sim-slider-arrow-right4:hover{
+    opacity: 1.0;   
+}
+
+div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+    bottom:50px;
+}
+
+span.sim-dot, span.sim-dot2, span.sim-dot3{
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+@media (min-width: 768px) {
+    footer .col-12, .col-6 {
+        text-align: left;
+        vertical-align: top;
+     }
+     footer .col-12.col-md-4:not([id]) {
+        text-align: right;
+        vertical-align: top;
+    } 
+    #navbardrop {
+        background-color:rgb(70, 172, 164);;
+        color: white !important;
+        margin: 28px 5px;
+        border-radius: 20px;
+        text-align: center;
+        width: 90px;
+    }
+    .nav-item.nodrop{
+        visibility: hidden;
+        display: none;
+    }
+    .loc2, .nav-item2{
+        visibility: hidden;
+        display: none;
+    }
+    ul.navbar-nav li.nav-item1 table td a{
+        color:rgb(70, 172, 164);
+    }
+    
+    .navbar ul li.loc1{
+        margin: 25px 0 0 250px;
+        vertical-align: middle;
+    }
+    .navbar ul li.loc11, .navbar ul li.loc12{
+        margin: 25px 0 0 20px;
+    }
+}
+  @media (max-width: 425px){
+    #Affordable_TVs {
+        background: url(./img/index-s.jpg) no-repeat;
+    }
+    .sim-slider, .sim-slider2, .sim-slider3, .sim-slider4{
+        padding: 0px 0px 0px 64px;
+      }
+       
+    .sim-slider-element, .sim-slider-element2, .sim-slider-element3, .sim-slider-element4{
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        align-content: center;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+    .nav-item.dropdown, .nav-item1, .loc1, .navbar ul li.loc11, .navbar ul li.loc12{
+        visibility: hidden;
+        display: none;
+    }
+    .loc2{
+        margin:10px 0;
+        text-align: center;
+    }
+    .sim-slider-list, .sim-slider-list2, .sim-slider-list3, .sim-slider-list4{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        height: 194px;
+        width: 331px;
+    }
+    .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
+        height: 169px;
+        width: 297px;
+    }
+    .sim-slider-list4 img {
+        height: 178px;
+        width: 120px;
+    }
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 297px;
+        bottom: 30px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        text-align: center;
+        bottom:35px;
+    }
+    
+    ul.navbar-nav li.nav-item2 a{
+        color:black;
+    }
+    
+    .slider-title2 {
+        display: inline-block;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: black;
+    }
+        .slider-title2 .large {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:425px !important;
+        margin:10px 0;
+    }
+    .image p{
+        left:21px;
+    }
   }
+  @media (max-width: 375px){
+    .image p{
+        left: 9px;
+        }
+    .sim-slider, .sim-slider2, .sim-slider3 {
+        padding: 0px 0px 0px 39px;
+      }  
+      .sim-slider-element, .sim-slider-element2, .sim-slider-element3 {
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        align-content: center;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+    .sim-slider-list, .sim-slider-list2, .sim-slider-list3 {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        height: 190px;
+        width: 306px;
+        top:10px;
+    }
+    .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
+        height: 149px;
+        width: 262x;
+    }
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 297px;
+        bottom: 20px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        bottom:40px;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 30%;
+        font-size: 30px;
+        z-index: 1;
+        cursor: pointer;
+      }
+      
+      .next {
+        right: 0;
+      }
+      
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:375px !important;
+        margin:10px 0;
+    }
+
+}
+  @media (max-width: 320px){
+    #Affordable_TVs {
+        background: url(./img/index-xs.jpg) no-repeat;
+    } 
+    .sim-slider, .sim-slider2, .sim-slider3 {
+        padding: 0px 0px 0px 48px;
+      }  
+      .sim-slider-element, .sim-slider-element2, .sim-slider-element {
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        align-content: center;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+    .sim-slider-list, .sim-slider-list2, .sim-slider-list3  {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        height: 160px;
+        width: 272px;
+    }
+    .sim-slider-list img, .sim-slider-list2 img, .sim-slider-list3 img {
+        height: 128px;
+        width: 224px;
+    }
+    
+    .center a {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .center{
+        background-color: red; 
+        text-align: top;
+        border-radius: 20px;
+        height: 40px;
+        width: 224px;
+        bottom: 20px;
+    }
+    div.sim-slider-dots, div.sim-slider-dots2, div.sim-slider-dots3 {
+        bottom:34px;
+    }
+    #map_content{
+        position: relative; /* for IE 6 */
+        width:320px !important;
+        margin:10px 0;
+    }#Affordable_TVs  .text-info {
+        font-size: 19px;
+        margin: 0px 20px 0px;
+    }
+    .image p{
+        height: 150px;
+        width: 150px;
+        font-weight: 200;
+        left: 5px;
+    }
+    .image img, .responsive-img{
+
+        height: 150px;
+        width: 150px;
+        padding:0px;
+    }  
 }

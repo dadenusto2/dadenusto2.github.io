@@ -1,45 +1,547 @@
-<!doctype html>
- <html lang="ru">
- 
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-   <meta charset="UTF-8">  
-   <link rel="stylesheet" href="slick.css"/>
-   <link rel="stylesheet" href="style.css"/>
-   <link rel="stylesheet" href="slick-theme.css"/>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
-   <script src="jquery-3.4.1.min.js" defer></script>
-   <script  src="slick.min.js" defer></script>
-   <script  src="new_js.js" defer></script>
-   <title>Задание 7</title>
-   <style>
-    .slick-prev:before, .slick-next:before { 
-      color:black !important;
-    }
-   </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="slick.css"/>
+    <link rel="stylesheet" href="slick-theme.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
+    <script src="jquery-3.4.1.min.js" defer></script>
+    <script  src="slick.min.js" defer></script>
+    <script  src="new_js.js" defer></script>
+    <script  src="new_js2.js" defer></script>
+    <script  src="new_js3.js" defer></script>
+    <script  src="new_js4.js" defer></script>
+    <script  src="new_js5.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>AVELElectronics</title>
   </head>
-
+  
   <body class="p-0 m-0">
-    <div class="container-fluid p-0 m-0">
-      <div class="container justify-content--center p=0 m=0 multiple-items">
-          <img src="1.png" alt="1">       
-          <img src="2.png" alt="2">
-          <img src="3.png" alt="3">
-          <img src="4.png" alt="4">
-          <img src="5.jpeg" alt="5">
-          <img src="6.jpeg" alt="6">
-          <img src="7.jpeg" alt="7">
-          <img src="8.jpeg" alt="8">
-          <img src="9.jpeg" alt="9">
-          <img src="10.jpeg" alt="10">
-          <img src="11.jpeg" alt="11">
-          <img src="12.jpeg" alt="12">
-          <img src="13.png" alt="13">
-          <img src="14.jpeg" alt="14">
-          <img src="15.jpeg" alt="15">
-          <img src="16.jpeg" alt="16">  
+    <header>
+      <div class="container justify-content-sm-center p=0 m=0">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#"><img src="./img/logo.png"  alt=""></a>
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon text-secondary"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="loc2"><!-- геолокация -->
+                <img src="./img/icon-geo.jpg" alt="">
+                Russia
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Catalog</a>
+                <div class="dropdown-menu">
+                  <a href="https://www.aviselectronics.com/catalog/bathroom-televisions">Bathroom TVs<br></a>
+                  <a href="https://www.aviselectronics.com/catalog/shower-televisions">Mirror TVs<br></a>
+                  <a href="https://www.aviselectronics.com/catalog/kitchen-televisions">Kitchen TVs<br></a>
+                  <ul>
+                      <li class="nav-item" style="list-style-type: none">
+                          <a class="nav-link" href="https://www.aviselectronics.com/catalog/kitchen-tvs/cabinet-door-tv">Cabinet door TV<br></a>  
+                      </li>
+                      <li class="nav-item" style="list-style-type: none">
+                          <a class="nav-link" href="https://www.aviselectronics.com/catalog/kitchen-tvs/splashback-tv">Splashback TV<br></a>  
+                      </li>
+                  </ul>
+                  <a href="https://www.aviselectronics.com/catalog/mirror-televisions">Mirror TVs<br></a>
+                  <a href="https://www.aviselectronics.com/catalog/open-frame-televisions">Open Frame TVs</a>
+                </div>
+              </li>
+              <li class="nav-item nodrop">
+                Catalog
+                <ul>
+                  <li class="nav-item" style="list-style-type: none"><a href="https://www.aviselectronics.com/catalog/bathroom-televisions">Bathroom TVs<br></a></li>
+                  <li class="nav-item" style="list-style-type: none"><a href="https://www.aviselectronics.com/catalog/shower-televisions">Mirror TVs<br></a></li>
+                  <li class="nav-item" style="list-style-type: none"><a href="https://www.aviselectronics.com/catalog/kitchen-televisions">Kitchen TVs<br></a></li>
+                  <li class="nav-item" style="list-style-type: none">
+                    <ul>
+                      <li class="nav-item" style="list-style-type: none">
+                          <a class="nav-link" href="https://www.aviselectronics.com/catalog/kitchen-tvs/cabinet-door-tv">Cabinet door TV<br></a>  
+                      </li>
+                      <li class="nav-item" style="list-style-type: none">
+                          <a class="nav-link" href="https://www.aviselectronics.com/catalog/kitchen-tvs/splashback-tv">Splashback TV<br></a>  
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item" style="list-style-type: none"><a href="https://www.aviselectronics.com/catalog/mirror-televisions">Mirror TVs<br></a></li>
+                  <li class="nav-item" style="list-style-type: none"><a href="https://www.aviselectronics.com/catalog/open-frame-televisions">OPEN FRAME</a></li>
+                </ul>
+              </li>
+              <li class="nav-item1">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                          <a href="https://www.aviselectronics.com/where-buy">Where to buy</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <a href="https://www.aviselectronics.com/become-reseller">Become a Reseller</a>
+                      </td>  
+                    </tr>
+                      <tr>
+                      <td>
+                          <a href="https://www.aviselectronics.com/contacts">Contacts</a>
+                      </td>
+                    </tr>
+                  </tbody>  
+                </table>      
+              </li>
+              <li class="nav-item1">
+                <table>   
+                  <tbody>
+                    <tr>
+                      <td>
+                          <a href="https://www.aviselectronics.com/shipping-information">Shipping Information</a>
+                      </td>  
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://www.aviselectronics.com/news">News</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="https://www.aviselectronics.com/where-buy">Where to buy</a>
+                      </td>
+                    </tr>                   
+                  </tbody>
+                </table>
+              </li>
+              <li class="nav-item2">
+              <a href="https://www.aviselectronics.com/contacts">Contacts</a>
+              </li>
+              <li class="nav-item2">
+              <a href="https://www.aviselectronics.com/news">News</a>
+              </li>
+              <li class="nav-item2">
+              <a href="https://www.aviselectronics.com/contacts">Contacts</a>
+              </li>
+              <li class="nav-item2">
+                <a href="https://www.aviselectronics.com/user/login">Log in</a>
+              </li>
+              <li class="loc1">
+                <img src="./img/icon-geo.jpg" alt="">
+                Russia
+              </li>
+              <li class="loc11">
+                <img src="./img/freeshipping.jpg" alt="">
+              </li>
+              <li class="loc12">
+                  <a href="https://www.aviselectronics.com/user/login"><img src="./img/icons8-person-30.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <h5 class="text-center">
-          <span id="message">1</span> из 16
-      </h5>
+    </header>
+  
+    <div id="Affordable_TVs" >
+      <div class="container justify-content-sm-center p=0 m=0">
+        <p class="text-info"><b><br>THE MOST EXCLUSIVE YET</b></p>
+        <h2>AFFORTABLE TVs</h2>
+        <h5>IN THE WORLD</h5>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="./img/tv_bathroom_icon.jpg" width="80" height="80" alt="image" class="radius"></td>
+              <td style="vertical-align:middle;"><a href="https://www.aviselectronics.com/catalog/bathroom-televisions" class="menu"><p class="text-info font-weight-bold"><b>BATHROOM</b></p><p class="text-dark">TELEVISIONS</p></a></td>
+            </tr>
+            <tr>
+                <td><img src="./img/tv_mirror_icon.jpg" width="80" height="80" alt="image" class="radius"></td>
+                <td style="vertical-align:middle;"><a href="https://www.aviselectronics.com/catalog/mirror-televisions"><p class="text-info font-weight-bold"><b>MIRROR</b></p><p class="text-dark">TELEVISIONS</p></a></td>
+            </tr>
+            <tr>
+              <td><img src="./img/tv_kitchen_icon.jpg" width="80" height="80" alt="image" class="radius"></td>
+              <td style="vertical-align:middle;"><a href="https://www.aviselectronics.com/catalog/kitchen-televisions" class="menu"><p class="text-info font-weight-bold"><b>KITCHEN</b></p><p class="text-dark">TELEVISIONS</p></a></td>
+            </tr>
+            <tr>
+                <td><img src="./img/tv_open_frame_icon.jpg" width="80" height="80" alt="image" class="radius"></td>
+                <td style="vertical-align:middle;"><a href="https://www.aviselectronics.com/catalog/open-frame-televisions" class="menu"><p class="text-info font-weight-bold"><b>OPEN FRAME</b></p><p class="text-dark">TELEVISIONS</p></a></td>
+            </tr>
+          <tbody>    
+        </table>
+        <p><br></p>
+      </div> 
+    </div> 
+    <div id="bathroom">
+      <div class="container justify-content-sm-center p=0 m=0">
+        <div class="row  align-text-top parent-row">
+          <div class="col-8 col-lg-4 text-center"><p class="where">WATTERPROF<br></p><h2 class="title">BATHROOM TVS</h2><br><p class="with_what">INTEGRATED VIBRATION SPEAKERS</p></div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(1); return false"><img src="./img/1.gif" width="80" height="80" alt="image"><br></a>WATERPROOF TV</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(2); return false"><img src="./img/2.gif" width="80" height="80" alt="image"><br></a>WATERPROOF REMOTE CONTROL</div>
+          <a id="1" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="2" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(3); return false"><img src="./img/3.gif" width="80" height="80" alt="image"></a><br>VIBRATION SPEAKERS</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(4); return false"><img src="./img/4.gif" width="80" height="80" alt="image"></a><br>SMART TV (OPTION)</div>
+          <a id="3" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="4" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>           
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(5); return false"><img src="./img/5.gif" width="80" height="80" alt="image"></a><br>EASY TO WASH</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(6); return false"><img src="./img/6.gif" width="80" height="80" alt="image"></a><br>FULL HD IPS LED</div>
+          <a id="5" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="6" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(7); return false"><img src="./img/7.gif" width="80" height="80" alt="image"></a><br>DIGITAL TV SYSTEM</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(8); return false"><img src="./img/8.gif" width="80" height="80" alt="image"></a><br>2 YEAR WARRANTY</div>
+          <a id="7" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="8" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+          <a id="9" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="10" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <a id="11" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="12" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>
+          <a id="13" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="14" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <a id="15" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="16" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+        </div>
+      </div>
+      <div id="bath_gallery">
+        <div class="sim-slider3">
+          <p class="slider-title"><span class="large">PHOTO/VIDEO</span><br>OF BATHROOM TVS</p>
+          <ul class="sim-slider-list3">
+            <li class="sim-slider-element3"> <img src="./img/avs270fs1_0.jpg" alt="1"></li>       
+            <li class="sim-slider-element3"> <img src="./img/avs320fs-1_1.jpg" alt="2"></li> 
+            <li class="sim-slider-element3"> <img src="./img/20170927_065323_0.jpg" alt="3"></li> 
+            <li class="sim-slider-element3"> <img src="./img/20170705_175113_1.jpg" alt="4"></li> 
+            <li class="sim-slider-element3"> <img src="./img/image-0-02-04-ca79e40e125c25e9b626bcd6b2ed121ff1dd5d2ffd4882.jpg" alt="5"></li> 
+            <li class="sim-slider-element3"> <img src="./img/20160720_194905_0_2.jpg" alt="6"></li> 
+            <li class="sim-slider-element3"> <img src="./img/20161023_231517_0.jpg" alt="7"></li> 
+            <li class="sim-slider-element3"> <img src="./img/unnamed_1_0_2.jpg" alt="8">  </li> 
+          </ul> 
+          <div class="sim-slider-arrow-left3"></div>
+          <div class="sim-slider-arrow-right3"></div>
+          <div class="sim-slider-dots3"></div>
+          <div class="center">
+            <a class="btn" href="https://www.aviselectronics.com/catalog/bathroom-tvs">FIND OUT MORE</a>
+          </div>
+        </div>
+      </div> 
+    </div>  
+    <div id="mirror">
+      <div class="container justify-content-sm-center p=0 m=0">
+        <div class="row  align-text-top parent-row">
+          <div class="col-8 col-lg-4 text-center"><p class="where">MIRROR<br></p><h2 class="title">TELEVISIONS</h2><br><p class="with_what">INTEGRATED VIBRATION SPEAKERS</p></div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(21); return false"><img src="./img/1.gif" width="80" height="80" alt="image"><br></a>WATERPROOF TV</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(22); return false"><img src="./img/2.gif" width="80" height="80" alt="image"><br></a>WATERPROOF REMOTE CONTROL</div>
+          <a id="21" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="22" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(23); return false"><img src="./img/3.gif" width="80" height="80" alt="image"></a><br>VIBRATION SPEAKERS</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(24); return false"><img src="./img/4.gif" width="80" height="80" alt="image"></a><br>SMART TV (OPTION)</div>
+          <a id="23" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="24" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>           
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(25); return false"><img src="./img/5.gif" width="80" height="80" alt="image"></a><br>EASY TO WASH</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(26); return false"><img src="./img/6.gif" width="80" height="80" alt="image"></a><br>FULL HD IPS LED</div>
+          <a id="25" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="26" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(27); return false"><img src="./img/7.gif" width="80" height="80" alt="image"></a><br>DIGITAL TV SYSTEM</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(28); return false"><img src="./img/8.gif" width="80" height="80" alt="image"></a><br>2 YEAR WARRANTY</div>
+          <a id="27" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="28" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+          <a id="29" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="30" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <a id="31" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="32" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>
+          <a id="33" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="34" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <a id="35" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="36" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+        </div>
+      </div>
+      <div id="mir_gallery">
+        <div class="sim-slider2">
+          <p class="slider-title"><span class="large">PHOTO/VIDEO</span><br>OF MIRROR TVS</p>
+          <ul class="sim-slider-list2">
+            <li class="sim-slider-element2"> <img src="./img/_dsc8629_0.jpg" alt="1"></li>       
+            <li class="sim-slider-element2"> <img src="./img/_dsc8670_0.jpg" alt="2"></li> 
+            <li class="sim-slider-element2"> <img src="./img/20170927_065338_1.jpg" alt="3"></li> 
+            <li class="sim-slider-element2"> <img src="./img/avs190fs1_0.jpg" alt="4"></li> 
+            <li class="sim-slider-element2"> <img src="./img/avs220fs1_1.jpg" alt="5"></li> 
+            <li class="sim-slider-element2"> <img src="./img/_dsc8710-1_0.jpg" alt="6"></li> 
+            <li class="sim-slider-element2"> <img src="./img/avs470fs-install_0.jpg" alt="7"></li> 
+            <li class="sim-slider-element2"> <img src="./img/avs470fs-install1_0.jpg" alt="8">  </li> 
+            <li class="sim-slider-element2"> <img src="./img/avs470fs-install7_0.jpg" alt="9"></li> 
+            <li class="sim-slider-element2"> <img src="./img/avs470fs-install3_0.jpg" alt="10">  </li> 
+          </ul>
+          <div class="sim-slider-arrow-left2"></div>
+          <div class="sim-slider-arrow-right2"></div>
+          <div class="sim-slider-dots2"></div>
+          <div class="center">
+            <a class="btn" href="https://www.aviselectronics.com/catalog/mirror-televisions">FIND OUT MORE</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </body> 
+    <div id="kitchen">
+      <div class="container justify-content-sm-center p=0 m=0">
+        <div class="row align-text-top parent-row">
+          <div class="col-8 col-lg-4 text-center"><p class="where">WATTERPROF<br></p><h2 class="title">KITCHEN TVS</h2><br><p class="with_what">INTEGRATED VIBRATION SPEAKERS</p></div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(41); return false"><img src="./img/1.gif" width="80" height="80" alt="image"><br></a>WATERPROOF TV</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(42); return false"><img src="./img/2.gif" width="80" height="80" alt="image"><br></a>WATERPROOF REMOTE CONTROL</div>
+          <a id="41" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="42" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(43); return false"><img src="./img/touch-screen.png" width="80" height="80" alt="image"></a><br>VIBRATION SPEAKERS</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(44); return false"><img src="./img/4.gif" width="80" height="80" alt="image"></a><br>SMART TV (OPTION)</div>
+          <a id="43" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="44" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>           
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(45); return false"><img src="./img/5.gif" width="80" height="80" alt="image"></a><br>EASY TO WASH</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(46); return false"><img src="./img/6.gif" width="80" height="80" alt="image"></a><br>FULL HD IPS LED</div>
+          <a id="45" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="46" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(47); return false"><img src="./img/7.gif" width="80" height="80" alt="image"></a><br>DIGITAL TV SYSTEM</div>
+          <div class="col-6 col-lg-1 text-center"><a href="#id" onclick="openbox(48); return false"><img src="./img/8.gif" width="80" height="80" alt="image"></a><br>2 YEAR WARRANTY</div>
+          <a id="47" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="48" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+          <a id="49" style="display: none;">All AVEL Bathroom TVs are certified with dust- and water protection IP rate standard. Test is performed in an authorized laboratory; test reports and certificates are issued for the series. Check IP rating in the product specification.</a>
+          <a id="50" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water.</a>
+          <a id="51" style="display: none;">One of our unique features is resonance/vibration integrated speaker. This type of speakers works through the front glass of our TVs and there are no holes at all. That’s really a great benefit for design and waterproof concerns.</a>
+          <a id="52" style="display: none;">Currently we equip all our Bathroom TVs with IP66 waterproof remote controls, it means they can be rinsed and washed under water tap but can not be immersed in water. issued for the series. Check IP rating in the product specification.</a>
+          <a id="53" style="display: none;">Front finish of our TVs is a plain real glass (safety glass for most of the models). It very easy to clean, even in kitchen or bathroom environment when there are water or steam on the screen.</a>
+          <a id="54" style="display: none;">We choose the best quality LED LCD panels with wide viewing angles (IPS or VA technology). 100% incoming material test is performed before we start the assembling process. Full HD is our standard for small and average models, 4K is coming soon for 43” size and up.</a>
+          <a id="55" style="display: none;">Enjoy free HD digital quality broadcast channels or use CI / CI+ slot for pay TV channels! Our main TV board used for DVB standard supports DVB-T/T2/C/S2, Freeview and the latest H.264/H.265 codecs. DVB (Digital Video Broadcast) standard is used in Europe, Russia, Middle East, Australia, Africa and many countries worldwide.</a>
+          <a id="56" style="display: none;">High quality Bathroom TVs from AVEL have 2-year unlimited warranty. Thorough multi-step testing and quality check procedures during and after assembling process let us make 100% sure the products will be sent and delivered to our customers in a perfect technical condition and will work for years.</a>
+        </div>
+      </div>
+      <div id="kitc_gallery">
+        <div class="sim-slider">
+          <p class="slider-title"><span class="large">PHOTO/VIDEO</span><br>OF KITCHEN TVS</p>
+          <ul class="sim-slider-list">
+            <li class="sim-slider-element"> <img src="./img/image2_1.jpeg" alt="11"></li>       
+            <li class="sim-slider-element"> <img src="./img/img_0483_1.jpg" alt="12"></li> 
+            <li class="sim-slider-element"> <img src="./img/img_3420_1.jpeg" alt="13"></li> 
+            <li class="sim-slider-element"> <img src="./img/img_5791_1.jpg" alt="14"></li> 
+            <li class="sim-slider-element"> <img src="./img/IMG_20171005_120753_0_0.jpg" alt="15"></li> 
+            <li class="sim-slider-element"> <img src="./img/20160720_194905_0_2.jpg" alt="16"></li> 
+            <li class="sim-slider-element"> <img src="./img/20161023_231517_0.jpg" alt="17"></li> 
+            <li class="sim-slider-element"> <img src="./img/unnamed_1_0_2.jpg" alt="18">  </li> 
+          </ul>
+          <div class="sim-slider-arrow-left"></div>
+          <div class="sim-slider-arrow-right"></div>
+          <div class="sim-slider-dots"></div>
+          <div class="center">
+            <a class="btn" href="https://www.aviselectronics.com/catalog/kitchen-tvs">FIND OUT MORE</a>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="AboutUs" class="container justify-content-sm-center p=0 m=0">
+      <div class="wrapper">
+        <h2 class="title">AVIS Electronics Indoor Waterproof TVs</h2>
+        <div class="column-2 description">
+          <p><strong>AVEL</strong> (AVIS Electronics) is a professional manufacturer of special application TVs (Mirror TVs, Waterproof TVs for Bathroom, Cabinet Door TVs for Kitchen). Assembling line is in China (ShenZhen), head office is in Moscow (Russia). With our experience since 2008 we’ve being improving and developing our products with just one aspiration and passion – make the best product in the world for the certain application.<br><br>
+          Our company is honest and open. Unlike many others we don’t say we do some magic behind closed doors. Welcome You to see test procedures, product reviews and other videos on our <a href="https://www.youtube.com/c/AvisElectronics" rel="nofollow" target="_blank">Official YouTube Channel</a>.<br><br>
+          AVEL products are being distributed by our own sales offices, with help of our Partners and Distributors and by online shops almost worldwide: in France, Germany, Italy, the UK (United Kingdom), and all over EU; Russia, Ukraine and Belarus; Dubai (UAE) and in the US (United States).<br><br><strong>Looking for a perfect and special TV?</strong><br>
+          You are at the right place, enjoy the premium services from AVEL:<br>
+          - Free worldwide delivery by expedited courier (5-10 days)<br>
+          - 2 Year unlimited warranty<br><br><strong>Want to join AVEL distributor’s program?</strong><br><a href="https://www.aviselectronics.com/become-reseller" rel="nofollow" target="_blank">Send Your query</a> and develop or start your business with us!</p>
+          <br>
+        </div>
+        <div class="row align-items-center parent-row">
+          <div class="col-12 col-lg-4 text-center">
+            <div class="videoAboutFactory">
+              <iframe id="video-aboutfactory" width="300" height="160" class="b-lazy b-loaded" style="border:0;"  allow="autoplay; encrypted-media" allowfullscreen="" src="https://www.youtube.com/embed/5QPvyrcou80?enablejsapi=1"></iframe>
+            </div> 
+          </div>
+          <div class="col-12 col-lg-3 text-center">
+            <div id="become-reseller">
+              <a href="https://www.aviselectronics.com/become-reseller" class="text-info">Distributor<br>wanted</a>
+            </div>
+          </div> 
+          <div class="col-6 col-lg-3 text-center" style="padding:0px !important;">  
+            <img class="responsive-img" src="factory-3.jpg" width="170" height="170" alt="">
+          </div>
+          <div class="col-6 col-lg-2 text-center" style="padding:0px !important;">  
+            <div class="image">
+              <img class="responsive-img" src="factory-4.jpg" width="170" height="170" alt="">    
+              <p><b>B2B and B2C orders</b><br>We support B2B clients with special price-list distribution policy</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cer">
+      <div id="cer_gallery">
+        <div class="sim-slider4">        
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="./img/icon-certificate.png" alt="">
+                </td>
+                <td>
+                  <p class="slider-title2">OUR<br>
+                  <span class="large">CERTIFICATES</span></p>  
+                </td>
+              </tr>
+            </tbody>
+          </table>           
+          <ul class="sim-slider-list4">
+            <li class="sim-slider-element4"> <img src="./img/lvd.jpg" alt="41"></li>       
+            <li class="sim-slider-element4"> <img src="./img/rohs_0.jpg" alt="42"></li> 
+            <li class="sim-slider-element4"> <img src="./img/emc.jpg" alt="43"></li> 
+          </ul>
+          <div class="sim-slider-arrow-left4"></div>
+          <div class="sim-slider-arrow-right4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container justify-content-sm-center p=0 m=0">  
+      <div id="map_content">
+        <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ac2d70aecc73c2406068bb1749cc4951dd0f9dcd47e08a90115d6c74514125b2f&amp;source=constructor" width="425" height="600" style="border:0;" ></iframe>
+        <div class="map_text">
+          <div class="container justify-content-sm-center p=0 m=0">  
+            <b>AVIS ELECTRONICS</b><BR>
+            +86 (186) 66660854<br>
+            <b>E-Mail:</b> sales@aviselectronics.com<br>
+            Mon-Fri: 09:00 - 18:00,<br>
+            Sat: 09:00 - 12:00(UTC +08:00)
+            <form>
+              <p><input placeholder="Name" name="user" ></p>
+              <p><input placeholder="E-mail" name="user"></p>
+              <p><textarea placeholder="Comment" name="Comment" rows="3" cols="35"></textarea></p>
+              <p><input type="submit" value="SEND" 
+                formaction="handler.php" formmethod="post"></p>
+            </form>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid p-0 m-0">
+      <div class="container">
+        <div class="container justify-content-sm-center p=0 m=0">
+          <div class="row align-items-center text-center">  
+            <div class="col-12 col-sm-5 col-lg-2 text-center">
+              <img src="./img/logo-2.png" width="131" height="40" alt=""/>    
+            </div>
+            <div class="col-12 col-sm-1 col-lg-1 text-center">  
+              <a href="https://www.aviselectronics.com/news" id="NEWS" rel="nofollow" target="_blank">NEWS</a> 
+            </div>
+            <div class="col-12 col-sm-1 col-lg-1 text-center">  
+              |
+            </div>
+            <div class="col-12 col-sm-2 col-lg-1 text-center">  
+              <a href="https://www.aviselectronics.com/where-buy" id="Where_to_buy" rel="nofollow" target="_blank">Where to buy</a>
+            </div>
+            <div class="col-12 col-sm-1 col-lg-1 text-center">  
+              |
+            </div>
+            <div class="col-12 col-sm-1 col-lg-1 text-center">  
+              <a href="https://www.aviselectronics.com/contacts" id="Contacts" rel="nofollow" target="_blank">Contacts</a>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-5 text-center">
+              <div class="container justify-content-sm-center p=0 m=0"> 
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="https://www.aviselectronics.com/catalog/bathroom-tvs" id="Bath" rel="nofollow">BATHROOM TELEVISIONS</a>
+                      </td>
+                      <td>
+                        <a href="https://www.aviselectronics.com/catalog/mirror-televisions" id="Mirror" rel="nofollow">MIRROR TELEVISIONS</a>
+                      </td>
+                      <td>
+                        <a href="https://www.aviselectronics.com/catalog/kitchen-tvs" id="Kitchen" rel="nofollow">KITCHEN TELEVISIONS</a>
+                      </td>
+                      <td>
+                        <a href="https://www.aviselectronics.com/catalog/shower-tvs" id="Shower" rel="nofollow">SHOWER TELEVISIONS</a>
+                      </td>
+                      <td>
+                        <a href="https://www.aviselectronics.com/catalog/open-frame-tvs" id="Open-frame" rel="nofollow">OPEN FRAME TELEVISIONS</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> 
+          <div class="row justify-content-between text-left"> 
+            <div class="col-12 col-sm-5 col-lg-4">                 
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      QUICK LINKS
+                    </th>
+                    <th>
+                      SUPPORT LINKS
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.aviselectronics.com/about-us" class="text-info" id="about-u" target="_blank">About Us<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/trade-mark" class="text-info" id="trade-mark" target="_blank">Trade Mark<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/certificates" class="text-info" id="certificates" target="_blank">Certificates<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/become-reseller" class="text-info" id="Become-reseller" target="_blank">Become a Reseller<br></a>
+                    </td>
+                    <td>
+                      <a href="https://www.aviselectronics.com/catalog/downloads" class="text-info" id="downloads" target="_blank">Downloads<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/warranty-terms"  class="text-info" id="warranty-terms" target="_blank">Warranty Terms<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/service-centers"  class="text-info" id="service-centers" target="_blank">Service Centers<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/shipping-information"  class="text-info" id="shipping-information" target="_blank">Shipping Information<br></a>
+                      <a href="https://www.aviselectronics.com/catalog/articles" class="text-info" id="articles" target="_blank">Articles & Reviews<br></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>              
+            </div>
+            <div class="col-12 col-sm-7 col-lg-4">   
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      Purchase now from:
+                    </th>
+                    <th>
+                      We are on B2B platforms:
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="https://www.amazon.com/stores/page/177A4765-B5CA-4AD6-A8BD-D44B3E81F9DE" class="text-info" id="amazon" target="_blank"><img src="./img/amazon-logo-vector-512.png" width="94" height="17" alt=""/></a>  
+                    </td>
+                    <td>
+                      <a href="https://www.globalsources.com/si/AS/SHENZHEN-AVIS/6008848040872/Homepage.htm" class="text-info" id="globalsources" target="_blank"><img src="./img/gslogo.png" width="94" height="17" alt=""/></a>
+                      <a href="https://www.made-in-china.com/showroom/avischina/product-list/catalog-1.html" class="text-info" id="made-in-china" target="_blank"><img src="./img/made-in-china_0.png" width="94" height="17" alt=""/></a>
+                      <a href="http://www.hktdc.com/manufacturers-suppliers/Shenzhen-Avis-Electronics-Technology-Company-Limited/en/1X097L90/" class="text-info" id="hktdc" target="_blank"><img src="./img/banner_logo.jpg" width="94" height="17" alt=""/></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>             
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">  
+            <div class="col-12 col-sm-6 col-lg-2">
+                +86 (755) 27634663<br>
+                +86 (186) 66660854<br>
+                sales@aviselectronics.com<br>  
+            </div> 
+            <div class="col-12 col-sm-6 col-lg-2">
+                Mon-Fri: 09:00 - 18:00,<br>
+                Sat: 09:00 - 12:00 (UTC +08:00) 
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4" id="adress">
+                <p>506-507A, HuiGu ChuangXin Technology park, JingBei road, Shiyan town, Baoan district, Shenzhen, Guangdong, China, 518108</p>
+            </div> 
+            <div class="col-12 col-sm-12 col-lg-4">
+                <img src="./img/icon-social-facebook.png" width="30" height="30" alt="sn"/> 
+                <img src="./img/icon-social-instagram.png" width="30" height="30" alt=""/> 
+                <img src="./img/icon-social-twiter.png" width="30" height="30" alt="sn"/>   
+                <img src="./img/icon-social-youtube.png" width="30" height="30" alt="sn"/>
+            </div>
+          </div>  
+        </div> 
+      </div>
+    </footer>
+  </body>  
+</html>

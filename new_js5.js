@@ -5,16 +5,16 @@ function Sim(sldrId) {
 		this.sldrRoot = id
 	}
 	else {
-		this.sldrRoot = document.querySelector('.sim-slider')
+		this.sldrRoot = document.querySelector('.sim-slider4')
 	};
 
 	// Carousel objects
-	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
-	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
-	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
-	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
-	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
-	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list4');
+	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element4');
+	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element4');
+	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left4');
+	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right4');
+	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots4');
 
 	// Initialization
 	this.options = Sim.defaults;

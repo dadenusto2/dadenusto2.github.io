@@ -1,0 +1,320 @@
+<!doctype html>
+ <html lang="ru">
+ 
+  <head>
+   <meta charset="UTF-8">  
+   <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link href="style.css" rel="stylesheet">  
+   <meta name="yandex-verification" content="4df4147ca4600664" />
+   <meta name="google-site-verification" content="E5CaIfvHRp78E33iEkv-X2fSWPkOlMJwnaeP96ibqIw" />
+   <title>ООО "Epressaliborance": продажа и разработка прессов</title>
+   <meta name="keywords" content="Epressaliborance,epressaliborance, прессы, высокотехнологичные прессы, недорогие прессы, продажа прессов, собственная разработка прессов"/>
+   <meta name="description" content="В продаже у ООО Epressaliborance все современные высокотехнологичные прессы собственного производства и других производителей по самой низкой цене">
+   <script src="js_function.js"></script>
+  </head>
+ 
+  <body class="p-0 m-0">
+   <header class="container-fluid p-0 m-0">
+     <div class="container">
+       <img id="logo" src="twitter-flat.png" width="100" height="100" alt="twitter"/>
+       <a>ООО "Epressaliborance" ༼ つ ◕_◕ ༽つ</a>
+      </div>
+   </header>
+   <nav id="navigation">
+     <div class="container text-center">
+       <div class="row">
+           <a class="col-sm-12 col-md-3 bg-primary" href="#press1"> Описание товара </a>
+           <a class="col-sm-12 col-md-3 bg-info" href="#tabl"> Таблица </a>
+           <a class="col-sm-12 col-md-3 bg-primary" href="#form"> Форма </a>
+           <a class="col-sm-12 col-md-3 bg-info" href="#podval"> Подвал</a>
+       </div>
+     </div>
+   </nav>
+   <div class="container justify-content-sm-center p=0 m=0" id="tovar">
+     <div>
+       <div id="press1"  itemscope itemtype="http://schema.org/Offer">
+         <span itemprop="name">Epressaliborance</span>
+         <span itemprop="sku">123-456-789</span>
+         <span itemprop="gtin8">2468-9753</span>
+         <img itemprop="image" id="press" src="press.png" width="200" height="200" alt="press"/>
+         <p itemprop="description">Данная прессовая установка является отличным вариантом для сфер деятельности, где нужно обрабатыать большие детали
+             (с площадью около 100х100).Благодаря электрическому двигателю, установка выдает колоссальное давление - до 150 тонн.
+         </p>
+       </div>
+       <div class="clo-md-12" id="pric"  itemscope itemtype="http://schema.org/Offer">
+          <span>Цена: </span>
+           <span itemprop="price">$6700</span>
+       </div>
+    </div>
+     <div class="row flex-column-reverse flex-md-row text-center">
+       <div class="col-md-12" id="tabl">
+         <div class="col-sm-12 col-sm-order-12 " >
+           <h2 >Таблица доступных прессов</h2>
+           <table class="m-auto">
+             <tbody>
+               <tr>
+                 <th>Название марки</th>
+                 <th>Версия сборки</th>
+                 <th>Дата создания</th>
+                 <th>Цена</th>
+               </tr>
+               <tr>
+                 <td colspan="2">Mitsu</td>
+                 <td>10.08.2019</td>
+                 <td >6300$</td>
+               </tr>
+               <tr>
+                 <td>Portu</td>
+                 <td>v2.0</td>
+                 <td>05.05.2016</td>
+                 <td >7500$</td>
+               </tr>
+               <tr>
+                 <td>Portu</td>
+                 <td>v1.0</td>
+                 <td>29.02.2018</td>
+                 <td>5800$</td>
+               </tr>
+               <tr>
+                 <td>Loin</td>
+                 <td  colspan="3">Находится в разработке</td>
+               </tr>
+               <tr>
+                 <td>Retter</td>
+                 <td>v1.11.0</td>
+                 <td>17.08.2017</td>
+                 <td >7800$</td>
+               </tr>
+               <tr>
+                 <td>Epressaliborance</td>
+                 <td>v1.11.0</td>
+                 <td>23.05.2019</td>
+                 <td >6700$</td>
+               </tr>
+             </tbody>
+           </table>
+           <br>
+           <form >
+            <h5>Выберите тип товара</h5>
+            <select name="pressType">
+              <option value="1">Mitsu </option>
+              <option value="2">Portu v2.0</option>
+              <option value="3">Portu v1.0</option>
+              <option value="4">Loin </option>
+              <option value="5">Retter </option>
+              <option value="6">Epressaliborance </option>
+            </select>
+            <br>
+           <h5> Введите количество прессов</h5>
+            <p><input oninput="NewPrice()" type="number" id="pressQuant" name="num" min="1" max="10" value="1"></p>
+            <div id="pressRadio">
+              <label><input type="radio" name="prodOptions" value="option1"> Дивгатель средней мощности (для всех видов работы)</label>
+              <br>
+              <label><input type="radio" name="prodOptions" value="option2"> Дивгатель малой мощности (для мягкого выпрямления) </label>
+              <br>
+              <label><input type="radio" name="prodOptions" value="option3"> Дивгатель большой мощности (для лучшей сжимаемости)</label>
+            </div>
+            <div id="pressCheck">
+              <label><input type="checkbox" name="prop1"> Увеличенная площадь действия пресса</label>
+              <br>
+              <label><input type="checkbox" name="prop2"> Увеличенная прочность двигающихся деталей</label>
+              <br>
+            </div>
+          </form>
+          <br>
+          <h5>Цена:</h5>
+          <div id="pressPrice">Пусто</div>
+         </div>
+      </div>
+      <div class="col-md-12" id="form">
+         <div class="col-sm-12 col-sm-order-1">
+           <h2> Задания , связанные с формой </h2>
+           <form action="http://example.com" method="POST">
+             <label>
+               Имя: 
+               <br>
+               <input name="field-name-1" value="Введите имя">
+             </label>
+             <br>
+             <label>
+               E-mail:
+               <br>
+               <input name="field-email" value="введите@почту.com" type="email">
+             </label>
+             <br>
+             <label>
+                Дата рождения:
+                <br>
+                <input name="field-date" value="2019-01-01" type="date" >
+             </label>
+             <br>
+             Пол:
+             <br>
+             <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Знаяение 1">
+                Мужской
+             </label>
+             <label>
+                <input type="radio"  name="radio-group-1" value="Знаяение 2">
+                Женский
+             </label>
+             <label>
+               <input type="radio"  name="radio-group-1" value="Знаяение 3">
+               Ламинат
+             </label>
+             <label>
+                <input type="radio"  name="radio-group-1" value="Знаяение 4">
+                 Линолеум
+             </label>
+             <br>
+             Количество глаз:
+             <br>
+             <label>
+               <input type="radio"  name="radio-group-2" value="Знаяение 1">
+               1
+             </label>
+             <label>
+               <input type="radio"  name="radio-group-2" value="Знаяение 2">
+               2
+             </label>
+             <label>
+               <input type="radio" name="radio-group-2" value="Знаяение 3">
+               3
+             </label>
+             <label>
+               <input type="radio"  name="radio-group-2" value="Знаяение 4">
+               4
+             </label>
+             <label>
+               <input type="radio"  name="radio-group-2" value="Знаяение 5">
+               6
+             </label>
+             <label>
+               <input type="radio"  name="radio-group-2" value="Знаяение 6">
+               8
+             </label>
+             <br>
+             Сверхспособности:
+             <br>
+             <label>
+               <input type="checkbox" checked="checked" name="check-1">
+               Непробиваемость
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Супер-скорость
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Левитация
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Невидимость
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Способность видеть сквозь стены
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Бессмертие
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Регенерация
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-1">
+               Деньги
+             </label>
+             <br>
+             <label>
+               <input type="checkbox" name="check-2">
+              С контрактом ознакомлен
+             </label>
+             <br>
+             <label>
+               Биография:
+               <br>
+               <textarea name="field-name-2">Напишите о себе</textarea>
+               <br>
+             </label>
+             <br>
+             <input type="submit" value="Отправить">
+           </form>
+         </div>
+      </div>
+     </div>
+     <div class="text-center" id ="review">
+         <div itemscope itemtype="https://schema.org/Review">
+          <a href="http://www.kubsu.com" itemprop="url">kubsu.com</a>
+           Оценка:
+           <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+             <span itemprop="ratingValue">5</span> -
+           </span>
+           <b>"<span itemprop="name">Великолепный пресс</span>" </b>  
+           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+           <span itemprop="name">Иван Иванов</span></span>, комментарий написан
+           <meta itemprop="datePublished" content="2019-05-04">4 , Май, 2019
+           <div itemprop="reviewBody">Я был очень обрабован, когда приобрел данный пресс. Еще больше радости принесло то, что это устройство может выполнять огромную работу, не перегриваясь.
+           </div>
+         <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+           <meta itemprop="name" content="Podmasterbe">
+           <meta itemprop="address" content="Город">
+           Журнал "Подмастерье"
+           <span itemprop="telephone">+7 888 888-88-88</span>
+           </span>
+         </div> 
+         <div itemscope itemtype="https://schema.org/Review">
+         <a href="http://www.kubsu.com" itemprop="url">kubsu.com</a>
+          Оценка:
+           <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+             <span itemprop="ratingValue">4</span> -
+           </span>
+           <b>"<span itemprop="name">Неплохое качество</span>" </b>  
+           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+           <span itemprop="name">Петр Петров</span></span>, комментарий написан
+           <meta itemprop="datePublished" content="2019-06-05">5 , Июня , 2019
+           <div itemprop="reviewBody">Для данного пресса очень большое влияние играет цена-качество. За низкую цену я получил не самый лучший , но и не самый худший пресс. Твердая четверка.
+           </div>
+         <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+           <meta itemprop="name" content="Pravda">
+           <meta itemprop="address" content="Город">
+           Журнал "Правда"
+           <span itemprop="telephone">+7 777 777-77-77</span>
+           </span>
+     </div>
+     <br>
+     <div class="text-center"  itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="address" content="Город">
+       <span itemprop="name">Epressaliborance</span>
+       <br>
+       Контакты:
+       <div itemscope itemtype="http://schema.org/PostalAddress">
+         Адресс: 
+         <span itemprop="streetAddress">ул. Кутузова, 77</span>
+         <span itemprop="postalCode">350061</span>
+         <span itemprop="addressLocality">Краснодар, Россия</span>
+       </div>
+       Телефон:<span itemprop="telephone">+7 800 555-35-35</span>,
+       Факс:<span itemprop="faxNumber">+7 800 555-35-35</span>,
+       Электронная почта: <span itemprop="email">epressaliborance@yandex.ru</span>
+     </div>
+   </div>
+   </div>
+   <footer class="container-fluid p-0 m-0" id="podval">
+     <div class="container">
+         (с) Егор Дашко 2019
+     </div>
+   </footer>
+  </body>
+ </html>
