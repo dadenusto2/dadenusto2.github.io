@@ -2,7 +2,7 @@
 $( document ).ready(function() {
     $("#btn").click(
 		function(){
-			sendAjaxForm('result_form', 'ajax_form', 'https://formcarry.com/s/P7UpH6DEyGf');
+			sendAjaxForm('result_form', 'ajax_form', 'https://formcarry.com/s/hCN-DAf_L1A');
 			return false; 
 		}
 	);
