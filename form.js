@@ -8,9 +8,9 @@ $( document ).ready(function() {
 	);
 });
  
-function sendAjaxForm(result_form, ajax_form, "https://formcarry.com/s/P7UpH6DEyGf") {
+function sendAjaxForm(result_form, ajax_form, url) {
     $.ajax({
-        url:     "https://formcarry.com/s/P7UpH6DEyGf",
+        url:     url,
         type:     "POST", //метод отправки
         dataType: "html", //формат данных
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
