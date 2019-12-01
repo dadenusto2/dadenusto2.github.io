@@ -23,3 +23,6 @@ function openbox(box){
     }else{
           document.getElementById(id).style.display='none';
     }
+}
+ 
+  
