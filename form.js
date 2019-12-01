@@ -81,7 +81,7 @@ $( document ).ready(function() {
 	);
 });
  
-function sendAjaxForm(result_form, ajax_form, url) {
+function sendAjaxForm(result_form, ajax_form, "https://formcarry.com/s/P7UpH6DEyGf") {
     $.ajax({
         url:     "https://formcarry.com/s/P7UpH6DEyGf",
         type:     "POST", //метод отправки
