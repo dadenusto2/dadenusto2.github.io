@@ -20,35 +20,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    jQuery('document').ready(function(){
-        jQuery('.historyAPI').on('click', function(e){
-            e.preventDefault();
-            var href = $(this).attr('href');
-            // Getting Content
-            getContent(href, true);
-            jQuery('.historyAPI').removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-    // Adding popstate event listener to handle browser back button
-    window.addEventListener("popstate", function(e) {
-        // Get State value using e.stat
-        getContent(location.pathname, false);
-    });
-    function getContent(url, addEntry) {
-        $.get(url)
-        .done(function( data ) {
-            // Updating Content on Page
-            $('#contentHolder').html(data);
-            if(addEntry == true) {
-                // Add History Entry using pushState
-                history.pushState(null, null, url);
-            }
-        });
-    }
-</script>
-
     <title>AVELElectronics</title>
   </head>
   
@@ -438,9 +409,9 @@
             Mon-Fri: 09:00 - 18:00,<br>
             Sat: 09:00 - 12:00(UTC +08:00)
             <form action="https://formcarry.com/s/P7UpH6DEyGf" method="POST" accept-charset="UTF-8" >
-              <p><input type="text" name="Name" placeholder="Name" name="user" ></p>
-              <p><input type="E-mail" name="E-mail" placeholder="E-mail" name="user"></p>
-              <p><textarea type="Comment" placeholder="Comment" name="Comment" rows="3" cols="35"></textarea></p>
+              <p><input type="text" name="Name" placeholder="Name"></p>
+              <p><input type="E-mail" name="E-mail" placeholder="E-mail"></p>
+              <p><textarea placeholder="Comment" name="Comment" rows="3" cols="35"></textarea></p>
               <p><input type="submit" value="Send"></p>
             </form>
           </div> 
