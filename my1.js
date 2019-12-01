@@ -1,4 +1,4 @@
-function sendAjaxForm(result_form, ajax_form) {
+function sendAjaxForm(ajax_form) {
     s="";
     let n = document.forms["form"]["Name"].value;
     if (n == "") {
