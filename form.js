@@ -9,8 +9,8 @@ function validate() {
         alert("Input e-mail");
         return false;
     }
-    let a = document.forms["form"]["Comment"].value;
-    if (a == "") {
+    let c = document.forms["form"]["Comment"].value;
+    if (c == "") {
         alert("Input Comment");
         return false;
     }
